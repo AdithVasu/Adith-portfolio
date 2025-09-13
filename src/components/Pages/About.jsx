@@ -31,7 +31,7 @@ const About = () => {
             <h3 className="card-title">Interests & Hobbies</h3>
             <div className="card-text vertical-stack">
               <p>
-                When I'm not coding or analyzing data, you'll find me in the gym lifting weights, 
+                Outside of being an aspiring software/data engineer, you'll find me in the gym lifting weights, 
                 strategizing at the poker table, or cheering on my favorite Bay Area teams.
               </p>
               <p>
@@ -39,12 +39,12 @@ const About = () => {
                 I'm passionate about basketball, football, and baseball.
               </p>
               <p>
-                <strong className="text-blue">Fitness:</strong> Regular weightlifting helps me stay disciplined 
-                and focused, qualities that translate well into my technical work.
+                <strong className="text-blue">Fitness:</strong> I started off going to the gym on a regular basis, but have started to 
+                train in powerlifting over the last year!
               </p>
               <p>
-                <strong className="text-blue">Poker:</strong> The strategic thinking and probability analysis 
-                in poker complement my analytical mindset in data science.
+                <strong className="text-blue">Poker:</strong> I love to play no or low-stakes poker with either friends, family, 
+                or new people at local venues.
               </p>
             </div>
           </div>
