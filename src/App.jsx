@@ -1,35 +1,25 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout/Layout';
 import Home from './components/Pages/Home';
 import About from './components/Pages/About';
-import Resume from './components/Pages/Resume';
 import Projects from './components/Pages/Projects';
+import Resume from './components/Pages/Resume';
 import Contact from './components/Pages/Contact';
 
 function App() {
-  const [activeTab, setActiveTab] = useState('home');
-
-  const renderContent = () => {
-    switch(activeTab) {
-      case 'home':
-        return <Home setActiveTab={setActiveTab} />;
-      case 'about':
-        return <About />;
-      case 'resume':
-        return <Resume />;
-      case 'projects':
-        return <Projects />;
-      case 'contact':
-        return <Contact />;
-      default:
-        return <Home setActiveTab={setActiveTab} />;
-    }
-  };
-
   return (
-    <Layout activeTab={activeTab} setActiveTab={setActiveTab}>
-      {renderContent()}
-    </Layout>
+    <Router>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </Layout>
+    </Router>
   );
 }
 

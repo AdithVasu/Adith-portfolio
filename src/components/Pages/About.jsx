@@ -2,63 +2,36 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div className="page-container">
-      <div className="page-container-wide">
-        <h2 className="section-title">About Me</h2>
+    <div className="main-content">
+      <h2 className="section-title center">About Me</h2>
 
-        <div className="grid-2" style={{ marginBottom: '4rem' }}>
-          {/* Personal Background */}
-          <div className="card">
-            <h3 className="card-title">Personal Background</h3>
-            <div className="card-text vertical-stack">
-              <p>
-                Hello! I'm Adith, born and raised in Petaluma, California (an hour north of San Francisco). 
-                I'm currently pursuing my passion for technology and data science at Washington University in St. Louis.
-              </p>
-              <p>
-                I'm driven by the intersection of software engineering and data science, with hands-on experience 
-                in building full-stack applications, creating automated data pipelines, and developing scalable solutions.
-              </p>
-              <p>
-                I'm proficient in multiple programming languages and frameworks, and I'm constantly expanding 
-                my technical expertise to stay at the forefront of technology.
-              </p>
-            </div>
-          </div>
-
-          {/* Interests & Hobbies */}
-          <div className="card">
-            <h3 className="card-title">Interests & Hobbies</h3>
-            <div className="card-text vertical-stack">
-              <p>
-                When I'm not coding or analyzing data, you'll find me in the gym lifting weights, 
-                strategizing at the poker table, or cheering on my favorite Bay Area teams.
-              </p>
-              <p>
-                <strong className="text-blue">Sports Teams:</strong> Go Warriors, 49ers, and Giants! 
-                I'm passionate about basketball, football, and baseball.
-              </p>
-              <p>
-                <strong className="text-blue">Fitness:</strong> Regular weightlifting helps me stay disciplined 
-                and focused, qualities that translate well into my technical work.
-              </p>
-              <p>
-                <strong className="text-blue">Poker:</strong> The strategic thinking and probability analysis 
-                in poker complement my analytical mindset in data science.
-              </p>
-            </div>
+      <div className="about-split">
+        
+        <div className="card about-card">
+          <h3 className="subsection-header">Professional</h3>
+          <div className="about-content">
+            <p className="about-para">
+              I am a <span className="text-white">software engineer and student</span> passionate about building scalable, impactful solutions at the intersection of frontend development and data intelligence. I specialize in the React/TypeScript ecosystem, with a focus on transforming complex data into high-performance, intuitive user experiences.
+            </p>
+            <p className="about-para" style={{ marginTop: '1.5rem' }}>
+              I am currently seeking opportunities in
+              <span className="text-accent"> Software Engineering</span>, 
+              <span className="text-accent"> AI Engineering</span>, and 
+              <span className="text-accent"> Product</span>.
+            </p>
           </div>
         </div>
 
-        {/* Professional Philosophy */}
-        <div className="card">
-          <h3 className="card-title">Professional Philosophy</h3>
-          <div className="card-text vertical-stack">
-            <p>
-              I believe in the power of technology to solve real-world problems and improve people's lives. 
-              Whether I'm building user-facing applications, optimizing data pipelines, or mentoring fellow students, 
-              I approach each challenge with curiosity, persistence, and attention to detail. I'm always looking 
-              to expand my knowledge and contribute to innovative projects that make a meaningful impact.
+        
+        <div className="card about-card">
+          <h3 className="subsection-header">Personal</h3>
+          <div className="about-content">
+            <p className="about-para">
+              Outside of engineering, I’m deeply passionate about music and artistic expression. 
+              I recently picked up the <strong>electric guitar</strong> and have been immersed in 
+              exploring a wide range of genres as I learn. When I’m not playing music, I’m likely 
+              at the <strong>gym</strong> staying active or at the <strong>poker table</strong>, 
+              where I enjoy the challenge of strategic decision-making and probability.
             </p>
           </div>
         </div>

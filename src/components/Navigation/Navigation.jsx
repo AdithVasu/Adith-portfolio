@@ -1,20 +1,20 @@
 import React from 'react';
-import TabButton from '../UI/TabButton';
+import { NavLink } from 'react-router-dom';
 
-const Navigation = ({ activeTab, setActiveTab }) => {
+const Navigation = () => {
   return (
     <nav className="navigation">
       <div className="nav-container">
         <div className="nav-content">
-          <div className="nav-logo">
+          <NavLink to="/" className="nav-logo">
             Adith Vasudevan
-          </div>
-          <div className="nav-buttons">
-            <TabButton tabName="home" label="Home" isActive={activeTab === 'home'} onClick={setActiveTab} />
-            <TabButton tabName="about" label="About" isActive={activeTab === 'about'} onClick={setActiveTab} />
-            <TabButton tabName="resume" label="Resume" isActive={activeTab === 'resume'} onClick={setActiveTab} />
-            <TabButton tabName="projects" label="Projects" isActive={activeTab === 'projects'} onClick={setActiveTab} />
-            <TabButton tabName="contact" label="Contact" isActive={activeTab === 'contact'} onClick={setActiveTab} />
+          </NavLink>
+          <div className="nav-links">
+            <NavLink to="/" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Home</NavLink>
+            <NavLink to="/about" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>About</NavLink>
+            <NavLink to="/projects" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Projects</NavLink>
+            <NavLink to="/resume" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Resume</NavLink>
+            <NavLink to="/contact" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Contact</NavLink>
           </div>
         </div>
       </div>
@@ -22,4 +22,4 @@ const Navigation = ({ activeTab, setActiveTab }) => {
   );
 };
 
-export default Navigation;
+export default Navigation; // <--- This line fixes your error

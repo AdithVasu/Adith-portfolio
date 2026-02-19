@@ -1,34 +1,34 @@
 export const projects = [
-    {
-      title: "Pinpoint",
-      date: "January 2025",
-      tech: "React, Node.js, Express, Supabase, Google Maps API",
-      description: "Built a full-stack social events app with interactive maps, real-time event creation, and friend-only visibility.",
-      details: "Developed a Node.js/Express backend with JWT authentication, WebSocket notifications, and event/messaging APIs. Integrated Google Maps API and designed a PostgreSQL schema for geolocation and user relationships.",
-      github: "https://github.com/AdithVasu/Pinpoint"
-    },
-    {
-      title: "FlashLearn",
-      date: "November 2024",
-      tech: "Python, Streamlit, Deepgram API, Google Gemini API, SQLite",
-      description: "Developed a full-stack Python app with Streamlit frontend to transcribe and summarize YouTube videos.",
-      details: "Implemented AI transcription & summarization using Deepgram and Google Gemini APIs. Designed a SQLite database with caching to ensure persistence, integrity, and performance.",
-      github: "https://github.com/AdithVasu/FlashLearn"
-    },
-    {
-      title: "CPU Monitor",
-      date: "October 2024",
-      tech: "Node.js, React, Socket.IO, InfluxDB",
-      description: "Built a real-time system monitoring dashboard (React frontend, Node.js backend) for CPU, memory, disk, and network.",
-      details: "Enabled live streaming with Socket.IO and persisted metrics using InfluxDB. Integrated a Discord alert system for threshold-based performance alerts.",
-      github: "https://github.com/AdithVasu/CPU-Monitor"
-    },
-    {
-      title: "Mock Operating System",
-      date: "2024",
-      tech: "C++",
-      description: "A mock operating system with basic os functionality completely constructed in C++",
-      details: "Implemented core OS concepts including process management, memory allocation, and file system operations.",
-      github: "https://github.com/AdithVasu/C-Mock-OS"
-    }
-  ];
+  {
+    title: "Abroad360",
+    date: "2025",
+    tech: "Java, Spring Boot, React, Neon PostgreSQL, TypeScript",
+    description: "A social networking platform for WashU students studying abroad to coordinate travel and communicate across Europe.",
+    details: "Built a bi-directional messaging system and a 'Social Handshake' manager for friend requests. Implemented a Spring Boot REST API with a Neon PostgreSQL database to manage relational student data and secure message history.",
+    github: "https://github.com/AdithVasu/wustl-abroad"
+  },
+  {
+    title: "PennyPilot",
+    date: "2025",
+    tech: "Python, Django, React, OpenAI API, Neon PostgreSQL",
+    description: "An AI-powered travel assistant that creates cost-aware European itineraries based on specific travel 'vibes.'",
+    details: "Integrated OpenAI's GPT-4o to generate dynamic adventure strategies. Developed a Django backend with JWT authentication and local token management to persist user sessions and saved itineraries.",
+    github: "https://github.com/AdithVasu/pennypilot"
+  },
+  {
+    title: "LSWDLE",
+    date: "2024",
+    tech: "TypeScript, React, Supabase, PostgreSQL, Tailwind CSS",
+    description: "A LEGO Star Wars themed 'Wordle-inspired' scouting game featuring unlimited play modes for characters, vehicles, and levels.",
+    details: "Utilized Supabase for real-time win tracking and user authentication. Built a modular, flat-component architecture in React to handle complex game logic and persistent 'Operative' profiles.",
+    github: "https://github.com/AdithVasu/lswdle"
+  },
+  {
+    title: "Mock Operating System",
+    date: "2024",
+    tech: "C++",
+    description: "A mock operating system with basic OS functionality completely constructed in C++.",
+    details: "Implemented core OS concepts including process management, memory allocation, memory scheduling, and file system operations.",
+    github: "https://github.com/AdithVasu/C-Mock-OS"
+  }
+];

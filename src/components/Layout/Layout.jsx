@@ -2,12 +2,11 @@ import React from 'react';
 import Navigation from '../Navigation/Navigation';
 import StarsAnimation from '../UI/StarsAnimation';
 
-const Layout = ({ activeTab, setActiveTab, children }) => {
+const Layout = ({ children }) => {
   return (
     <div className="layout-container">
       <StarsAnimation />
-      <Navigation activeTab={activeTab} setActiveTab={setActiveTab} />
-      
+      <Navigation />
       <main className="main-content">
         {children}
       </main>
