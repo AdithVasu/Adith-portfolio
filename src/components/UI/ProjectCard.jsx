@@ -16,7 +16,7 @@ const ProjectCard = ({ project }) => {
         <p className="project-details">{project.details}</p>
       )}
 
-      {/* Changed class to project-button to match CSS */}
+      
       <button 
         onClick={() => window.open(project.github, '_blank')}
         className="project-button"

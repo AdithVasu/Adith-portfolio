@@ -7,7 +7,7 @@ const Resume = () => {
       <h2 className="section-title center">Resume</h2>
 
       <div className="resume-container">
-        {/* The direct PDF embed */}
+        
         <div className="pdf-viewer">
           <embed
             src="/resume.pdf"
@@ -17,7 +17,6 @@ const Resume = () => {
           />
         </div>
 
-        {/* The direct download link */}
         <div className="resume-actions">
           <a 
             href="/resume.pdf" 

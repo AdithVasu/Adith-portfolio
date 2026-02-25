@@ -4,11 +4,11 @@ import { Mail, Phone, Linkedin, Send } from 'lucide-react';
 const Contact = () => {
   return (
     <div className="main-content">
-      {/* Added contact-title class for the larger font and spacing */}
+      
       <h2 className="section-title center contact-title">Get In Touch</h2>
       
       <div className="contact-split">
-        {/* Left Side: Message Form */}
+        
         <div className="card contact-card">
           <h3 className="subsection-header">Send a Message</h3>
           <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
@@ -34,7 +34,7 @@ const Contact = () => {
           </form>
         </div>
 
-        {/* Right Side: Direct Connection */}
+        
         <div className="card contact-card">
           <h3 className="subsection-header">Connect With Me</h3>
           <div className="connect-content">
@@ -47,7 +47,7 @@ const Contact = () => {
               <div className="contact-item">
                 <Mail className="contact-icon" />
                 <div>
-                  <span className="contact-label">Email</span>
+                  <span className="contact-label">Email: </span>
                   <a href="mailto:adithvasu978@gmail.com" className="contact-link">adithvasu978@gmail.com</a>
                 </div>
               </div>
@@ -55,15 +55,15 @@ const Contact = () => {
               <div className="contact-item">
                 <Phone className="contact-icon" />
                 <div>
-                  <span className="contact-label">Phone</span>
-                  <span className="contact-link">+1 (123) 456-7890</span>
+                  <span className="contact-label">Phone: </span>
+                  <span className="contact-link">+1 (707) 835-4331</span>
                 </div>
               </div>
 
               <div className="contact-item">
                 <Linkedin className="contact-icon" />
                 <div>
-                  <span className="contact-label">LinkedIn</span>
+                  <span className="contact-label">LinkedIn: </span>
                   <a href="https://linkedin.com/in/adithvasu" target="_blank" rel="noreferrer" className="contact-link">linkedin.com/in/adithvasu</a>
                 </div>
               </div>

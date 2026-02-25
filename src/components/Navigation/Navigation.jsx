@@ -22,4 +22,4 @@ const Navigation = () => {
   );
 };
 
-export default Navigation; // <--- This line fixes your error
+export default Navigation; 

@@ -9,7 +9,8 @@ const Home = () => {
   return (
     <div className="home-wrapper">
       <section className="hero-split">
-        {/* Left Side: Text */}
+        
+        
         <div className="hero-left">
           <h1 className="hero-name">Adith Vasudevan</h1>
           <p className="hero-tagline">
@@ -17,7 +18,6 @@ const Home = () => {
           </p>
         </div>
 
-        {/* Right Side: Image */}
         <div className="hero-right">
           <div className="image-container">
             <img src={profilePic} alt="Adith Vasudevan" className="profile-img" />
@@ -25,7 +25,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Massive CTA Buttons */}
       <div className="mega-actions">
         <button onClick={() => navigate('/projects')} className="mega-btn">
           <Briefcase size={32} />
