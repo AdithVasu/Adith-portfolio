@@ -64,7 +64,7 @@ const Contact = () => {
                 <Linkedin className="contact-icon" />
                 <div>
                   <span className="contact-label">LinkedIn: </span>
-                  <a href="https://linkedin.com/in/adithvasu" target="_blank" rel="noreferrer" className="contact-link">linkedin.com/in/adithvasu</a>
+                  <a href="www.linkedin.com/in/adithya-vasudevan-008a312b3/" target="_blank" rel="noreferrer" className="contact-link">linkedin.com/in/adithvasu</a>
                 </div>
               </div>
             </div>
